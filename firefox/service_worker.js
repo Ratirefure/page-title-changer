@@ -57,7 +57,7 @@ browser.commands.onCommand.addListener((command,tab)=>{  //keyboard shortcut
 });
 
 function listenChangeCommand(tab,append){   //javascript injection
-	if(tab != null && tab.id != -1 && !tab.url.startsWith("browser://")){    //do nothing if URL starts with browser:// or is otherwise invalid
+	if(tab != null && tab.id != -1){
 		browser.scripting.executeScript({
 			func: changeTitle,
 			target: {tabId: tab.id},
