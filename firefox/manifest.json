@@ -13,15 +13,16 @@
         "128": "icon128.png"
     },
 	"background":{
-		"service_worker": "service_worker.js",
         "scripts": ["service_worker.js"],
 		"type": "module"
 	},
 	"commands":{
 		"1changeTitle":{
+            "suggested_key": {"default": "Alt+X"},
 			"description": "Change Page Title"
 		},
         "2appendTitle":{
+            "suggested_key": {"default": "Alt+C"},
 			"description": "Append to Page Title"
 		}
 	},
@@ -32,5 +33,10 @@
     "action":{
         "default_title": "Extension Options",
         "default_popup": "options.html"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "{754f2e70-581d-44b3-b3f3-f091c3828342}"
+        }
     }
 }
