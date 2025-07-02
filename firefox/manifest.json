@@ -1,0 +1,36 @@
+{
+	"manifest_version": 3,
+	"name": "Page Title Changer",
+	"description": "Quickly changes the page title to whatever text you've highlighted.",
+	"version": "1.0",
+	"permissions":[
+		"scripting",
+		"contextMenus",
+		"activeTab",
+        "storage"
+	],
+    "icons":{
+        "128": "icon128.png"
+    },
+	"background":{
+		"service_worker": "service_worker.js",
+        "scripts": ["service_worker.js"],
+		"type": "module"
+	},
+	"commands":{
+		"1changeTitle":{
+			"description": "Change Page Title"
+		},
+        "2appendTitle":{
+			"description": "Append to Page Title"
+		}
+	},
+    "options_ui":{
+        "page": "options.html",
+        "open_in_tab": false
+    },
+    "action":{
+        "default_title": "Extension Options",
+        "default_popup": "options.html"
+    }
+}
