@@ -7,4 +7,4 @@ https://chromewebstore.google.com/detail/page-title-changer/kimllkbdjicoakkejccd
 
 Firefox AMO:
 
-Awaiting review
+https://addons.mozilla.org/en-US/firefox/addon/page-title-changer/
